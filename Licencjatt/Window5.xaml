@@ -9,12 +9,19 @@
         Title="GRA" Height="500" Width="1000" Background="Black">
 
     <Window.Resources>
-        <LinearGradientBrush>
-            
+        <LinearGradientBrush x:Key="Zielony"
+                             StartPoint="0,0.5"
+                             EndPoint="1,0.5">
+            <GradientStop Color="#FF2B7A06" Offset="0.0"/>
+            <GradientStop Color="Black" Offset="1.0"/>
+
         </LinearGradientBrush>
+        <Style x:Key="Zielonyy">
+            <Setter Property="Control.Background" Value="{StaticResource Zielony}" />
+        </Style>
     </Window.Resources>
     <Grid>
-        <DataGrid x:Name="dataGrid" Margin="30,56,620,36" Background="Black" CanUserAddRows="True" AutoGenerateColumns="False" SelectionChanged="dataGrid_SelectionChanged" RenderTransformOrigin="0.5,0.5">
+        <DataGrid x:Name="dataGrid" Margin="30,56,620,36" Style="{StaticResource Zielonyy}" CanUserAddRows="True" AutoGenerateColumns="False" SelectionChanged="dataGrid_SelectionChanged" RenderTransformOrigin="0.5,0.5">
 
             <!--<DataGrid.ColumnHeaderStyle>
                 <Style TargetType="{x:Type DataGridColumnHeader}">
