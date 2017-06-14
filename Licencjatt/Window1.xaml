@@ -1,0 +1,15 @@
+﻿<Window x:Class="Licencjatt.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Licencjatt"
+        mc:Ignorable="d"
+        Title="INTERPOLACJA NEWTONA" Height="500" Width="800">
+    <Grid Background="Black">
+        <Label x:Name="label" Content="INTERPOLACJA NEWTONA" Foreground="#FF2B7A06" Margin="400,50,85,380" FontSize="20" FontWeight="Bold"/>
+        <Image x:Name="Image1_png" Margin="0,50,450,100" Source="Image1.png" Stretch="Fill"/>
+            <WindowsFormsHost Margin="300,100,0,0" ChildChanged="WindowsFormsHost_ChildChanged"/>
+        <local:PdfViewerHost x:Name="PdfViewer"  PdfPath="C:\\Users\\Paulina\\Desktop\\newton.pdf" Margin="300,100,0,0" />
+    </Grid>
+</Window>
