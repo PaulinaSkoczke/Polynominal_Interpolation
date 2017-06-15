@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Licencjatt"
         mc:Ignorable="d"
         Title="ZADANIE 2" Height="500" Width="1000" Background="Black" ResizeMode="NoResize">
-    <Grid>
+    <Grid Loaded="Grid_Loaded_1">
         <TextBlock x:Name="textBlock" Margin="100,50,600,350" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="ZADANIE 2" FontSize="36"/>
         <TextBlock x:Name="textBlock1" Margin="100,150,500,250" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="Wyznacz wielomian interpolacyjny dla funkcji f zadnej w sposób dyskretny:" FontSize="16" />
         <RichTextBox x:Name="richTextBox" Margin="500,250,30,30" >

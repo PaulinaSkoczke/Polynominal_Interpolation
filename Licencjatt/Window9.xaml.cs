@@ -58,21 +58,23 @@ namespace Licencjatt
             halo.w3 = Math.Round(halo.w3, 2);
             halo.w4 = Math.Round(halo.w4, 2);
 
-
+            halo.Inte(4);
 
             if (a == halo.w1 && b == halo.w2 && c == halo.w3 && d == halo.w4)
             {
-                Window7 brawo = new Window7();
+                Window7 brawo = new Window7(4);
                 brawo.ShowDialog();
             }
             else
             {
-                Window6 bee = new Window6();
-                bee.ShowDialog();
+                Window10 blad = new Window10();
+                blad.ShowDialog();
             }
         }
 
-        private void Grid_Loaded(object sender, RoutedEventArgs e)
+ 
+
+        private void Grid_Loaded_1(object sender, RoutedEventArgs e)
         {
             textx0.Content = halo.x[0].ToString();
             textx1.Content = halo.x[1].ToString();

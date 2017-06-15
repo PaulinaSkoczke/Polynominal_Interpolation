@@ -36,9 +36,9 @@
                 <DataGridTextColumn Header="f(x)" Binding="{Binding f}" Width="40" MinWidth="50" />
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="button" Content="Button" Margin="738,215,180,238" Click="button_Click"/>
-        <TextBox x:Name="textBox" Margin="721,127,151,323" TextWrapping="Wrap" />
-        <TextBox x:Name="textBox1" Margin="721,155,151,295" TextWrapping="Wrap"/>
+        <Button x:Name="button" Content="Dodaj wartosci" Margin="730,215,150,230" Click="button_Click"/>
+        <TextBox x:Name="textBox" Margin="730,127,150,323" TextWrapping="Wrap" />
+        <TextBox x:Name="textBox1" Margin="730,155,150,295" TextWrapping="Wrap"/>
 
 
     </Grid>

@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="Window6" Height="300" Width="300">
     <Grid>
-        <Ellipse Fill="#FFF4F4F5" Margin="32,42,44,59" Stroke="Black"/>
-
+        
     </Grid>
 </Window>

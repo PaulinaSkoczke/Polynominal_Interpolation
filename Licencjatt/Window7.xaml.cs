@@ -23,12 +23,41 @@ namespace Licencjatt
     {
         InterpolationNL halo = new InterpolationNL();
         
-        public Window7(int[] f)
+        public Window7(int n)
         {
             InitializeComponent();
+            int zmienna1;
+            int zmienna2;
+            int zmienna3;
+            int zmienna4;
 
-            Values2 = new ChartValues<int> { halo.f[0], halo.f[1], halo.f[2], halo.f[3]};
+            if (n == 2)
+            {
+               
+                zmienna1 = halo.f[0];
+                zmienna2 = halo.f[1];
 
+                Values2 = new ChartValues<int> { zmienna1, zmienna2 };
+            }
+            else if (n == 3)
+            {
+                zmienna1 = halo.f[0];
+                zmienna2 = halo.f[1];
+                zmienna3 = halo.f[2];
+
+                Values2 = new ChartValues<int> { zmienna1, zmienna2, zmienna3 };
+
+            }
+            else if (n == 4)
+            {
+                zmienna1 = halo.f[0];
+                zmienna2 = halo.f[1];
+                zmienna3 = halo.f[2];
+                zmienna4 = halo.f[3];
+
+                Values2 = new ChartValues<int> { zmienna1, zmienna2, zmienna3 };
+
+            }
             DataContext = this;
         }
 

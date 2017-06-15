@@ -23,7 +23,7 @@ namespace Licencjatt
     /// </summary>
     public partial class Window4 : Window
     {
-        Interpolation cos = new Interpolation();
+        
         InterpolationNL halo = new InterpolationNL();
 
         double a;
@@ -65,15 +65,15 @@ namespace Licencjatt
             if (a == halo.w1 && b == halo.w2)
             {
                 
-                int[] f;
                 
-                Window7 super = new Window7(halo.f);
+                
+                Window7 super = new Window7(2);
                 super.ShowDialog();
             }
             else
             {
-                Window6 bee = new Window6();
-                bee.ShowDialog();
+                Window10 blad = new Window10();
+                blad.ShowDialog();
             }
 
 

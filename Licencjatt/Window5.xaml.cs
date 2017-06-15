@@ -46,8 +46,9 @@ namespace Licencjatt
         private void button_Click(object sender, RoutedEventArgs e)
         {
             interpolacjaNewLag zmienna = new interpolacjaNewLag();
+
             textBox.Text = zmienna.x.ToString();
-            textBox.Text = zmienna.f.ToString();
+            textBox1.Text = zmienna.f.ToString();
 
             dataGrid.Items.Add(zmienna);
         }
