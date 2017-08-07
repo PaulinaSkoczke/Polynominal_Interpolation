@@ -21,7 +21,8 @@ namespace Licencjatt
     /// </summary>
     public partial class Window7 : Window
     {
-        InterpolationN halo = new InterpolationN();
+        InterpolationL halo = new InterpolationL();
+        InterpolationN halo1 = new InterpolationN();
 
         public Window7(int n)
         {
@@ -106,8 +107,14 @@ namespace Licencjatt
         }
         private void Grid_Loaded_1(object sender, RoutedEventArgs e)
         {
-            halo.ObliczN(2);
-            label1.Content = halo.w1.ToString();
+            
+            halo1.ObliczN(2);
+            halo1.ObliczN(3);
+            halo1.ObliczN(4);
+            halo1.ObliczN(5);
+
+            label1.Content = halo1.w.ToString();
+
         }
 
         public ChartValues<int> Values1 { get; set; }

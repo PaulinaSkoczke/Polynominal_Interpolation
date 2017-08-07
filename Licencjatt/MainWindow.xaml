@@ -10,7 +10,6 @@
         <Button x:Name="button" Content="Interpolacja Newtona" Margin="50,380,600,50" Background="#FF2B7A06" FontWeight="Bold" Click="button_Click"/>
         <Button x:Name="button1" Content="Interpolacja Lagrange'a" Margin="600,380,50,50" Background="#FF2B7A06" FontWeight="Bold" Click="button1_Click"/>
         <Button x:Name="button2" Content="Gra dydaktyczna" Margin="430,280,430,120" Background="#FF2B7A06" FontWeight="Bold" Click="button2_Click"/>
-        <Button x:Name="button3" Content="Całkiem niezły kalkulator" Margin="410,380,410,50" Background="#FF2B7A06" FontWeight="Bold" Click="button3_Click"/>
         <Label x:Name="INTERPOLACJA_WIELOMIANOWA" Content="INTERPOLACJA WIELOMIANOWA" Foreground="#FF2B7A06" Margin="200,50,200,380" Background="#FF0A0A0A" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center"/>
         <TextBlock x:Name="definition" Foreground="#FF2B7A06" Text="to metoda numeryczna przybliżająca funkcję wielomianem
                    stopnia n, przyjmującym w n+1 punktach zwanych węzłami interpolacji wartości takie same jak przybliżana funkcja" 

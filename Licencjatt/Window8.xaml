@@ -8,7 +8,8 @@
         Title="ZADANIE 2" Height="500" Width="1000" Background="Black" ResizeMode="NoResize">
     <Grid Loaded="Grid_Loaded_1">
         <TextBlock x:Name="textBlock" Margin="100,50,600,350" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="ZADANIE 2" FontSize="36"/>
-        <TextBlock x:Name="textBlock1" Margin="100,150,500,250" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="Wyznacz wielomian interpolacyjny dla funkcji f zadnej w sposób dyskretny:" FontSize="16" />
+        <TextBlock x:Name="textBlock1" Margin="100,150,500,250" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="Wielomian interpolacyjny dla funkcji f zadny jest w sposób dyskretny:" FontSize="16" />
+        <TextBlock x:Name="textBlock5" Margin="100,330,500,70" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="Znajdź wartość wielomianu interpolacyjnego w punkcie x = 11" FontSize="16" />
         <RichTextBox x:Name="richTextBox" Margin="500,250,30,30" >
             <FlowDocument>
                 <Paragraph>
@@ -18,12 +19,12 @@
         </RichTextBox>
         <TextBlock x:Name="textBlock2" Margin="100,230,860,210" FontSize="16" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="x"/>
         <TextBlock x:Name="textBlock3" Margin="100,270,860,170" FontSize="16" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="f(x)"/>
-        <Label x:Name="textx0" Margin="150,230,810,210" Foreground="#FF2B7A06"/>
-        <Label x:Name="textx2" Margin="220,230,740,210" Foreground="#FF2B7A06"/>
-        <Label x:Name="textf2" Margin="220,270,740,170" Foreground="#FF2B7A06"/>
-        <Label x:Name="textx1" Margin="190,230,770,210" Foreground="#FF2B7A06"/>
-        <Label x:Name="textf0" Margin="150,270,810,170" Foreground="#FF2B7A06"/>
-        <Label x:Name="textf1" Margin="190,270,770,170" Foreground="#FF2B7A06"/>
+        <Label x:Name="textx0" Margin="130,230,820,210" Foreground="#FF2B7A06"/>
+        <Label x:Name="textx2" Margin="240,230,710,210" Foreground="#FF2B7A06"/>
+        <Label x:Name="textf2" Margin="240,270,710,170" Foreground="#FF2B7A06"/>
+        <Label x:Name="textx1" Margin="190,230,760,210" Foreground="#FF2B7A06"/>
+        <Label x:Name="textf0" Margin="130,270,820,170" Foreground="#FF2B7A06"/>
+        <Label x:Name="textf1" Margin="190,270,760,170" Foreground="#FF2B7A06"/>
         
        
         <TextBlock x:Name="textBlock11" Margin="700,30,20,400" Text="ZAPOMNIAŁEŚ?" FontSize="20" Foreground="#FF2B7A06" TextWrapping="Wrap" FontWeight="Bold"/>

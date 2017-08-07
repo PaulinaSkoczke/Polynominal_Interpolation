@@ -48,10 +48,12 @@ namespace Licencjatt
             textx1.Content = halo.x[1].ToString();
             textx2.Content = halo.x[2].ToString();
             textx3.Content = halo.x[3].ToString();
+            textx4.Content = halo.x[4].ToString();
             textf0.Content = halo.f[0].ToString();
             textf1.Content = halo.f[1].ToString();
             textf2.Content = halo.f[2].ToString();
             textf3.Content = halo.f[3].ToString();
+            textf4.Content = halo.f[4].ToString();
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
