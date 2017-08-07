@@ -24,10 +24,10 @@ namespace Licencjatt
     public partial class Window4 : Window
     {
         
-        InterpolationNL halo = new InterpolationNL();
+        InterpolationN halo = new InterpolationN();
 
-        double a;
-        double b;
+        string a;
+        string b;
         
 
         public Window4()
@@ -52,29 +52,35 @@ namespace Licencjatt
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            
-            
-            a = double.Parse(textBox.Text);
-            b = double.Parse(textBox1.Text);
-
-            halo.Inte(2);
-            halo.w1 = Math.Round(halo.w1, 2);
-            halo.w2 = Math.Round(halo.w2, 2);
+            //double porownanie;
+            //double porownanie1;
 
 
-            if (a == halo.w1 && b == halo.w2)
-            {
+            //halo.ObliczN(2);
+            //a = textBox.Text;
+            //b = textBox1.Text;
+
+            //porownanie = double.Parse(a);
+            //porownanie1 = double.Parse(b);
+
+
+            //halo.w1 = Math.Round(halo.w1, 2);
+            //halo.w2 = Math.Round(halo.w2, 2);
+
+
+            //if (porownanie == halo.w1 && porownanie1 == halo.w2)
+            //{
                 
                 
                 
                 Window7 super = new Window7(2);
                 super.ShowDialog();
-            }
-            else
-            {
-                Window10 blad = new Window10();
-                blad.ShowDialog();
-            }
+            //}
+            //else
+            //{
+            //    Window10 blad = new Window10();
+            //    blad.ShowDialog();
+            //}
 
 
         }
@@ -85,6 +91,12 @@ namespace Licencjatt
             textx1.Content = halo.x[1].ToString();
             textf0.Content = halo.f[0].ToString();
             textf1.Content = halo.f[1].ToString();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Window4 replay = new Window4();
+            replay.ShowDialog();
         }
     }
 }

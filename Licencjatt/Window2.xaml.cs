@@ -46,5 +46,11 @@ namespace Licencjatt
             Window9 example3 = new Window9();
             example3.ShowDialog();
         }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            Window6 example4 = new Window6();
+            example4.ShowDialog();
+        }
     }
 }

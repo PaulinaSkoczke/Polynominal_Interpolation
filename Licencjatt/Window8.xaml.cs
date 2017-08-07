@@ -23,7 +23,7 @@ namespace Licencjatt
         double b;
         double c;
 
-        InterpolationNL halo = new InterpolationNL();
+        InterpolationN halo = new InterpolationN();
 
         public Window8()
         {
@@ -33,26 +33,26 @@ namespace Licencjatt
         private void button2_Click(object sender, RoutedEventArgs e)
         {
 
-            a = double.Parse(textBox.Text);
-            b = double.Parse(textBox1.Text);
-            c = double.Parse(textBox2.Text);
+            //a = double.Parse(textBox.Text);
+            //b = double.Parse(textBox1.Text);
+            //c = double.Parse(textBox2.Text);
 
-            halo.w1 = Math.Round(halo.w1, 2);
-            halo.w2 = Math.Round(halo.w2, 2);
-            halo.w3 = Math.Round(halo.w3, 2);
+            //halo.w1 = Math.Round(halo.w1, 2);
+            //halo.w2 = Math.Round(halo.w2, 2);
+            //halo.w3 = Math.Round(halo.w3, 2);
 
-            halo.Inte(3);
+            //halo.ObliczN(3);
 
-            if (halo.w1 == a && halo.w2 == b && halo.w3 == c)
-            {
+            //if (halo.w1 == a && halo.w2 == b && halo.w3 == c)
+            //{
                 Window7 brawo = new Window7(3);
                 brawo.ShowDialog();
-            }
-            else
-            {
-                Window10 blad = new Window10();
-                blad.ShowDialog();
-            }
+            //}
+            //else
+            //{
+            //    Window10 blad = new Window10();
+            //    blad.ShowDialog();
+            //}
 
         }
 
@@ -78,6 +78,12 @@ namespace Licencjatt
             textf0.Content = halo.f[0].ToString();
             textf1.Content = halo.f[1].ToString();
             textf2.Content = halo.f[2].ToString();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Window8 replay = new Window8();
+            replay.ShowDialog();
         }
     }
 }

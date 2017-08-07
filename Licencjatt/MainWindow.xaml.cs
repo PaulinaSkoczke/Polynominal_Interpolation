@@ -44,6 +44,11 @@ namespace Licencjatt
             game.ShowDialog();
            
         }
-       
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Window5 kalkulator = new Window5();
+            kalkulator.ShowDialog();
+        }
     }
 }

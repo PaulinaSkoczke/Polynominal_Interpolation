@@ -11,6 +11,7 @@
         <Button x:Name="button" Content="POZIOM 1" Margin="600,50,50,350" Background="#FF2B7A06" FontWeight="Bold" FontSize="20" Click="button_Click"/>
         <Button x:Name="button2" Content="POZIOM 2" Margin="600,150,50,250" Background="#FF2B7A06" FontWeight="Bold" FontSize="20" Click="button2_Click"/>
         <Button x:Name="button3" Content="POZIOM 3" Margin="600,250,50,150" Background="#FF2B7A06" FontWeight="Bold" FontSize="20" Click="button3_Click"/>
+        <Button x:Name="button4" Content="POZIOM 4" Margin="600,350,50,50" Background="#FF2B7A06" FontWeight="Bold" FontSize="20" Click="button4_Click" />
         <Button x:Name="button1" Content="NIE, ZA MAŁO UMIEM" Margin="50,350,600,50" Background="#FF2B7A06" FontWeight="Bold" FontSize="20" Click="button1_Click"/>
 
     </Grid>

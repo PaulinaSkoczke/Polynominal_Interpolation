@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Licencjatt
 {
-    class InterpolationNL
+    class InterpolationN
     {
-        public int[] x = {0,0,0,0};
-        public int[] f = {0,0,0,0};
+        public int[] x = {0,0,0,0,0};
+        public int[] f = {0,0,0,0,0};
         public double w1 { get; set; }
         public double w2 { get; set; }
         public double w3 { get; set; }
@@ -18,18 +18,18 @@ namespace Licencjatt
 
         //static System.Random[] z = new Random[Environment.TickCount];
 
-        public InterpolationNL()
+        public InterpolationN()
         {
-            for(int i = 0; i < 4; i++)
+            for(int i = 0; i < 5; i++)
             {
                 
-                x[i] = los.Next(10);
-                f[i] = los.Next(10);
+                x[i] = los.Next(-10, 10);
+                f[i] = los.Next(-10, 10);
 
             }
             
         }
-        public void Inte(int n)
+        public void ObliczN(int n)
         {
             if(n == 2)
             {

@@ -33,8 +33,8 @@ namespace Licencjatt
 
         public class interpolacjaNewLag
         {
-         public int x { get; set; }
-         public int f { get; set; }
+         public string x { get; set; }
+         public string f { get; set; }
 
         }
 
@@ -47,10 +47,11 @@ namespace Licencjatt
         {
             interpolacjaNewLag zmienna = new interpolacjaNewLag();
 
-            textBox.Text = zmienna.x.ToString();
-            textBox1.Text = zmienna.f.ToString();
+            zmienna.x = textBox.Text;
+            zmienna.f = textBox1.Text;
 
             dataGrid.Items.Add(zmienna);
+            
         }
     }
 

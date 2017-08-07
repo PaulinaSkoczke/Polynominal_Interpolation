@@ -9,8 +9,8 @@
     <Grid>
         <Label x:Name="label" Content="INTERPOLACJA LAGRANGE'A" Foreground="#FF2B7A06" Margin="50,50,450,380" FontSize="20" FontWeight="Bold"/>
         <Image x:Name="Image2_png" Margin="450,50,0,100" Source="Image2.png" Stretch="Fill"/>
-        <WindowsFormsHost Margin="50,119,320,50" ChildChanged="WindowsFormsHost_ChildChanged"/>
-        <local:PdfViewerHost x:Name="PdfViewer2"  PdfPath="C:\\Users\\Paulina\\Desktop\\Lagrange.pdf" Margin="50,119,381,100" ChildChanged="PdfViewer2_ChildChanged" />
+        <WindowsFormsHost Margin="50,119,270,30" ChildChanged="WindowsFormsHost_ChildChanged"/>
+        <local:PdfViewerHost x:Name="PdfViewer2"  PdfPath="C:\\Users\\Paulina\\Desktop\\Lagrangee.pdf" Margin="50,119,270,30" ChildChanged="PdfViewer2_ChildChanged" />
 
     </Grid>
 </Window>

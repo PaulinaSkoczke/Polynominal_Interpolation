@@ -19,9 +19,46 @@ namespace Licencjatt
     /// </summary>
     public partial class Window6 : Window
     {
+        InterpolationN halo = new InterpolationN();
         public Window6()
         {
             InitializeComponent();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 newton = new Window1();
+            newton.ShowDialog();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Window3 lagrange = new Window3();
+            lagrange.ShowDialog();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Window7 check = new Window7(5);
+            check.ShowDialog();
+        }
+        private void Grid_Loaded_1(object sender, RoutedEventArgs e)
+        {
+            textx0.Content = halo.x[0].ToString();
+            textx1.Content = halo.x[1].ToString();
+            textx2.Content = halo.x[2].ToString();
+            textx3.Content = halo.x[3].ToString();
+            textf0.Content = halo.f[0].ToString();
+            textf1.Content = halo.f[1].ToString();
+            textf2.Content = halo.f[2].ToString();
+            textf3.Content = halo.f[3].ToString();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Window6 replay = new Window6();
+            replay.ShowDialog();
+            
         }
     }
 }

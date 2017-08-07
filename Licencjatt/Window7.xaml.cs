@@ -21,56 +21,106 @@ namespace Licencjatt
     /// </summary>
     public partial class Window7 : Window
     {
-        InterpolationNL halo = new InterpolationNL();
-        
+        InterpolationN halo = new InterpolationN();
+
         public Window7(int n)
         {
             InitializeComponent();
-            int zmienna1;
-            int zmienna2;
-            int zmienna3;
-            int zmienna4;
+            int f1;
+            int f2;
+            int f3;
+            int f4;
+            int f5;
+            int x1;
+            int x2;
+            int x3;
+            int x4;
+            int x5;
+
 
             if (n == 2)
             {
-               
-                zmienna1 = halo.f[0];
-                zmienna2 = halo.f[1];
 
-                Values2 = new ChartValues<int> { zmienna1, zmienna2 };
+                f1 = halo.f[0];
+                f2 = halo.f[1];
+                x1 = halo.x[0];
+                x2 = halo.x[1];
+
+
+                Values1 = new ChartValues<int> { f1, f2 };
+
+                Values1 = new ChartValues<int> { x1, x2 };
+
+        
+
             }
             else if (n == 3)
             {
-                zmienna1 = halo.f[0];
-                zmienna2 = halo.f[1];
-                zmienna3 = halo.f[2];
+                f1 = halo.f[0];
+                f2 = halo.f[1];
+                f3 = halo.f[2];
+                x1 = halo.x[0];
+                x2 = halo.x[1];
+                x3 = halo.x[2];
 
-                Values2 = new ChartValues<int> { zmienna1, zmienna2, zmienna3 };
-
+                Values1 = new ChartValues<int> { f1, f2, f3 };
+               
+                    Values1 = new ChartValues<int> { x1, x2, x3 };
+              
             }
             else if (n == 4)
             {
-                zmienna1 = halo.f[0];
-                zmienna2 = halo.f[1];
-                zmienna3 = halo.f[2];
-                zmienna4 = halo.f[3];
+                f1 = halo.f[0];
+                f2 = halo.f[1];
+                f3 = halo.f[2];
+                f4 = halo.f[3];
+                x1 = halo.x[0];
+                x2 = halo.x[1];
+                x3 = halo.x[2];
+                x4 = halo.x[3];
 
-                Values2 = new ChartValues<int> { zmienna1, zmienna2, zmienna3 };
+                Values1 = new ChartValues<int> { f1, f2, f3, f4 };
 
+                Values1 = new ChartValues<int> { x1, x2, x3, x4 };
+               
             }
-            DataContext = this;
+
+            else if (n == 5)
+            {
+                f1 = halo.f[0];
+                f2 = halo.f[1];
+                f3 = halo.f[2];
+                f4 = halo.f[3];
+                f5 = halo.f[4];
+                x1 = halo.x[0];
+                x2 = halo.x[1];
+                x3 = halo.x[2];
+                x4 = halo.x[3];
+                x5 = halo.x[4];
+
+                Values1 = new ChartValues<int> { f1, f2, f3, f4, f5 };
+                //Values1 = new ChartValues<int> { x1, x2, x3, x4, x5 };
+            }
+
+            DataContext = this;    
+        }
+        private void Grid_Loaded_1(object sender, RoutedEventArgs e)
+        {
+            halo.ObliczN(2);
+            label1.Content = halo.w1.ToString();
         }
 
-        public ChartValues<int> Values2 { get; set; }
+        public ChartValues<int> Values1 { get; set; }
+        //public ChartValues<int> Values3 { get; set; }
 
         //Values1 = new ChartValues<double> { };
 
 
         //DataContext = this;
-    
+
 
         //public ChartValues<double> Values1 { get; set; }
-    
+
 
     }
 

@@ -69,7 +69,8 @@
     </ApplicationDefinition>
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
-    <Compile Include="InterpolationNL.cs" />
+    <Compile Include="InterpolationL.cs" />
+    <Compile Include="InterpolationN.cs" />
     <Compile Include="PdfViewer.cs">
       <SubType>UserControl</SubType>
     </Compile>

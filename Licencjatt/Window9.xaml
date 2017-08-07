@@ -26,18 +26,11 @@
         <Label x:Name="textf1" Margin="190,270,770,170" Foreground="#FF2B7A06"/>
         <Label x:Name="textx3" Margin="240,230,720,210" Foreground="#FF2B7A06"/>
         <Label x:Name="textf3" Margin="240,270,720,170" Foreground="#FF2B7A06"/>
-        <TextBlock x:Name="textBlock8" Margin="50,350,650,90" FontSize="16" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="Poszukiwany wielomian ma postać:"/>
-        <TextBlock x:Name="textBlock9" Margin="20,400,910,30" FontSize="16" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="W(x) = "/>
-        <TextBox x:Name="textBox" Margin="80,400,870,40" />
-        <TextBlock x:Name="textBlock10" Margin="130,400,800,30" TextWrapping="Wrap" Text="* x^3 +" FontSize="16" Foreground="#FF2B7A06"/>
-        <TextBox x:Name="textBox1" Margin="200,400,750,40"/>
-        <TextBlock x:Name="textBlock15" Margin="250,400,680,30" TextWrapping="Wrap" Text="* x^2 +" FontSize="16" Foreground="#FF2B7A06"/>
-        <TextBox x:Name="textBox2" Margin="320,400,630,40"/>
-        <TextBlock x:Name="textBlock16" Margin="380,400,570,30" TextWrapping="Wrap" Text="* x +" FontSize="16" Foreground="#FF2B7A06"/>
-        <TextBox x:Name="textBox3" Margin="430,400,520,40"/>
+        
         <TextBlock x:Name="textBlock11" Margin="700,30,20,400" Text="ZAPOMNIAŁEŚ?" FontSize="20" Foreground="#FF2B7A06" TextWrapping="Wrap" FontWeight="Bold"/>
         <Button x:Name="button" Content="Interpolacja Newtona" Background="#FF2B7A06" Margin="700,100,100,330" Click="button_Click"/>
         <Button x:Name="button1" Content="Interpolacja Lagrange'a" Background="#FF2B7A06" Margin="700,150,100,280" Click="button1_Click" />
-        <Button x:Name="button2" Content="Sprawdź" Background="#FF2B7A06" Margin="400,300,500,130" Click="button2_Click"/>
+        <Button x:Name="button2" Content="Sprawdź siebie!" Background="#FF2B7A06" Margin="200,400,600,30" Click="button2_Click"/>
+        <Button x:Name="button3" Content="Losuj inne dane" Margin="860,0,0,430" Background="#FF2B7A06" Click="button3_Click" />
     </Grid>
 </Window>

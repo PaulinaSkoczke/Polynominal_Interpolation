@@ -9,7 +9,7 @@
     <Grid Background="Black">
         <Label x:Name="label" Content="INTERPOLACJA NEWTONA" Foreground="#FF2B7A06" Margin="400,50,85,380" FontSize="20" FontWeight="Bold"/>
         <Image x:Name="Image1_png" Margin="0,50,450,100" Source="Image1.png" Stretch="Fill"/>
-            <WindowsFormsHost Margin="300,100,0,0" ChildChanged="WindowsFormsHost_ChildChanged"/>
-        <local:PdfViewerHost x:Name="PdfViewer"  PdfPath="C:\\Users\\Paulina\\Desktop\\newton.pdf" Margin="300,100,0,0" ChildChanged="PdfViewer_ChildChanged" />
+            <WindowsFormsHost Margin="250,100,0,48" ChildChanged="WindowsFormsHost_ChildChanged"/>
+        <local:PdfViewerHost x:Name="PdfViewer"  PdfPath="C:\\Users\\Paulina\\Desktop\\newton.pdf" Margin="272,100,0,48" ChildChanged="PdfViewer_ChildChanged" />
     </Grid>
 </Window>

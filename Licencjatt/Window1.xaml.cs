@@ -28,5 +28,10 @@ namespace Licencjatt
         {
 
         }
+
+        private void PdfViewer_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
+        {
+
+        }
     }
 }

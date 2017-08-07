@@ -24,7 +24,7 @@ namespace Licencjatt
         double c;
         double d;
 
-        InterpolationNL halo = new InterpolationNL();
+        InterpolationN halo = new InterpolationN();
         
 
 
@@ -49,27 +49,27 @@ namespace Licencjatt
         {
 
 
-            a = double.Parse(textBox.Text);
-            b = double.Parse(textBox1.Text);
-            c = double.Parse(textBox2.Text);
-            d = double.Parse(textBox3.Text);
-            halo.w1 = Math.Round(halo.w1, 2);
-            halo.w2 = Math.Round(halo.w2, 2);
-            halo.w3 = Math.Round(halo.w3, 2);
-            halo.w4 = Math.Round(halo.w4, 2);
+            //a = double.Parse(textBox.Text);
+            //b = double.Parse(textBox1.Text);
+            //c = double.Parse(textBox2.Text);
+            //d = double.Parse(textBox3.Text);
+            //halo.w1 = Math.Round(halo.w1, 2);
+            //halo.w2 = Math.Round(halo.w2, 2);
+            //halo.w3 = Math.Round(halo.w3, 2);
+            //halo.w4 = Math.Round(halo.w4, 2);
 
-            halo.Inte(4);
+            //halo.ObliczN(4);
 
-            if (a == halo.w1 && b == halo.w2 && c == halo.w3 && d == halo.w4)
-            {
+            //if (a == halo.w1 && b == halo.w2 && c == halo.w3 && d == halo.w4)
+            //{
                 Window7 brawo = new Window7(4);
                 brawo.ShowDialog();
-            }
-            else
-            {
-                Window10 blad = new Window10();
-                blad.ShowDialog();
-            }
+            //}
+            //else
+            //{
+            //    Window10 blad = new Window10();
+            //    blad.ShowDialog();
+            //}
         }
 
  
@@ -84,6 +84,12 @@ namespace Licencjatt
             textf1.Content = halo.f[1].ToString();
             textf2.Content = halo.f[2].ToString();
             textf3.Content = halo.f[3].ToString();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Window9 replay = new Window9();
+            replay.ShowDialog();
         }
     }
     

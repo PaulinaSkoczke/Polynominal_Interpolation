@@ -24,17 +24,12 @@
         <Label x:Name="textx1" Margin="190,230,770,210" Foreground="#FF2B7A06"/>
         <Label x:Name="textf0" Margin="150,270,810,170" Foreground="#FF2B7A06"/>
         <Label x:Name="textf1" Margin="190,270,770,170" Foreground="#FF2B7A06"/>
-        <TextBlock x:Name="textBlock8" Margin="50,350,650,90" FontSize="16" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="Poszukiwany wielomian ma postać:"/>
-        <TextBlock x:Name="textBlock9" Margin="30,400,890,30" FontSize="16" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="W(x) = "/>
-        <TextBox x:Name="textBox" Margin="100,400,850,40" />
-        <TextBlock x:Name="textBlock10" Margin="150,400,780,30" TextWrapping="Wrap" Text="* x^2 + " FontSize="16" Foreground="#FF2B7A06"/>
-        <TextBox x:Name="textBox1" Margin="220,400,730,40"/>
-        <TextBlock x:Name="textBlock15" Margin="270,400,680,30" TextWrapping="Wrap" Text="* x + " FontSize="16" Foreground="#FF2B7A06"/>
-        <TextBox x:Name="textBox2" Margin="310,400,650,40"/>
+        
+       
         <TextBlock x:Name="textBlock11" Margin="700,30,20,400" Text="ZAPOMNIAŁEŚ?" FontSize="20" Foreground="#FF2B7A06" TextWrapping="Wrap" FontWeight="Bold"/>
         <Button x:Name="button" Content="Interpolacja Newtona" Background="#FF2B7A06" Margin="700,100,100,330" Click="button_Click"/>
         <Button x:Name="button1" Content="Interpolacja Lagrange'a" Background="#FF2B7A06" Margin="700,150,100,280" Click="button1_Click" />
-        <Button x:Name="button2" Content="Sprawdź" Background="#FF2B7A06" Margin="380,400,525,30" Click="button2_Click"/>
-
+        <Button x:Name="button2" Content="Sprawdź siebie!" Background="#FF2B7A06" Margin="200,400,600,30" Click="button2_Click"/>
+        <Button x:Name="button3" Content="Losuj inne dane" Margin="860,0,0,430" Background="#FF2B7A06" Click="button3_Click" />
     </Grid>
 </Window>
