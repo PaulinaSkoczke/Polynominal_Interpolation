@@ -19,7 +19,9 @@ namespace Licencjatt
     /// </summary>
     public partial class Window6 : Window
     {
-        InterpolationN halo = new InterpolationN();
+        InterpolationN newton = new InterpolationN();
+        InterpolationL lagrange = new InterpolationL();
+        Numbers number = new Numbers();
         public Window6()
         {
             InitializeComponent();
@@ -27,33 +29,54 @@ namespace Licencjatt
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 newton = new Window1();
-            newton.ShowDialog();
+            Window1 newton1 = new Window1();
+            newton1.ShowDialog();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Window3 lagrange = new Window3();
-            lagrange.ShowDialog();
+            Window3 lagrange1 = new Window3();
+            lagrange1.ShowDialog();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            Window7 check = new Window7(5);
+            Window7 check = new Window7(5, number);
+            check.Owner = this;
             check.ShowDialog();
         }
         private void Grid_Loaded_1(object sender, RoutedEventArgs e)
         {
-            textx0.Content = halo.x[0].ToString();
-            textx1.Content = halo.x[1].ToString();
-            textx2.Content = halo.x[2].ToString();
-            textx3.Content = halo.x[3].ToString();
-            textx4.Content = halo.x[4].ToString();
-            textf0.Content = halo.f[0].ToString();
-            textf1.Content = halo.f[1].ToString();
-            textf2.Content = halo.f[2].ToString();
-            textf3.Content = halo.f[3].ToString();
-            textf4.Content = halo.f[4].ToString();
+            randomizeData();
+        }
+        private void randomizeData()
+        {
+            textx0.Content = lagrange.x[0].ToString();
+            textx1.Content = lagrange.x[1].ToString();
+            textx2.Content = lagrange.x[2].ToString();
+            textx3.Content = lagrange.x[3].ToString();
+            textx4.Content = lagrange.x[4].ToString();
+            textf0.Content = lagrange.f[0].ToString();
+            textf1.Content = lagrange.f[1].ToString();
+            textf2.Content = lagrange.f[2].ToString();
+            textf3.Content = lagrange.f[3].ToString();
+            textf4.Content = lagrange.f[4].ToString();
+            k.Content = lagrange.k[0].ToString();
+            lagrange.ObliczL(5);
+            label1.Content = lagrange.z.ToString();
+
+            number.Numbers10[0] = textx0.Content.ToString();
+            number.Numbers10[1] = textx1.Content.ToString();
+            number.Numbers10[2] = textx2.Content.ToString();
+            number.Numbers10[3] = textx3.Content.ToString();
+            number.Numbers10[4] = textx4.Content.ToString();
+            number.Numbers10[5] = textf0.Content.ToString();
+            number.Numbers10[6] = textf1.Content.ToString();
+            number.Numbers10[7] = textf2.Content.ToString();
+            number.Numbers10[8] = textf3.Content.ToString();
+            number.Numbers10[9] = textf4.Content.ToString();
+            number.Numbers10[10] = label1.Content.ToString();
+
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)

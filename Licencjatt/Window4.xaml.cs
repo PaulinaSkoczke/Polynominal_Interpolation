@@ -24,15 +24,16 @@ namespace Licencjatt
     public partial class Window4 : Window
     {
         
-        InterpolationL halo = new InterpolationL();
-
+        InterpolationL lagrange = new InterpolationL();
+        Numbers number = new Numbers();
        
 
         public Window4()
         {
             InitializeComponent();
-
             
+            
+
 
         }
 
@@ -54,8 +55,9 @@ namespace Licencjatt
                 
                 
                 
-                Window7 super = new Window7(2);
-                super.ShowDialog();
+                Window7 check = new Window7(2, number);
+                check.Owner = this;
+                check.ShowDialog();
           
 
 
@@ -63,13 +65,25 @@ namespace Licencjatt
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-            textx0.Content = halo.x[0].ToString();
-            textx1.Content = halo.x[1].ToString();
-            textf0.Content = halo.f[0].ToString();
-            textf1.Content = halo.f[1].ToString();
-
-            halo.ObliczL(2);
-            label1.Content = halo.w.ToString();
+            randomizeData();
+            
+        }
+        private void randomizeData()
+        {
+            textx0.Content = lagrange.x[0].ToString();
+            textx1.Content = lagrange.x[1].ToString();
+            textf0.Content = lagrange.f[0].ToString();
+            textf1.Content = lagrange.f[1].ToString();
+            k.Content = lagrange.k[0].ToString();
+            lagrange.ObliczL(2);
+            label1.Content = lagrange.z.ToString();
+            
+            
+            number.Numbers4[0] = textx0.Content.ToString();
+            number.Numbers4[1] = textx1.Content.ToString();
+            number.Numbers4[2] = textf0.Content.ToString();
+            number.Numbers4[3] = textf1.Content.ToString();
+            number.Numbers4[4] = label1.Content.ToString();
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)

@@ -19,13 +19,9 @@ namespace Licencjatt
     /// </summary>
     public partial class Window9 : Window
     {
-        double a;
-        double b;
-        double c;
-        double d;
-
-        InterpolationN halo = new InterpolationN();
-        
+       InterpolationN newton = new InterpolationN();
+       InterpolationL lagrange = new InterpolationL();
+        Numbers number = new Numbers();
 
 
         public Window9()
@@ -35,55 +31,56 @@ namespace Licencjatt
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 newton = new Window1();
-            newton.ShowDialog();
+            Window1 newton1 = new Window1();
+            newton1.ShowDialog();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Window3 lagrange = new Window3();
-            lagrange.ShowDialog();
+            Window3 lagrange1 = new Window3();
+            lagrange1.ShowDialog();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
 
 
-            //a = double.Parse(textBox.Text);
-            //b = double.Parse(textBox1.Text);
-            //c = double.Parse(textBox2.Text);
-            //d = double.Parse(textBox3.Text);
-            //halo.w1 = Math.Round(halo.w1, 2);
-            //halo.w2 = Math.Round(halo.w2, 2);
-            //halo.w3 = Math.Round(halo.w3, 2);
-            //halo.w4 = Math.Round(halo.w4, 2);
-
-            //halo.ObliczN(4);
-
-            //if (a == halo.w1 && b == halo.w2 && c == halo.w3 && d == halo.w4)
-            //{
-                Window7 brawo = new Window7(4);
-                brawo.ShowDialog();
-            //}
-            //else
-            //{
-            //    Window10 blad = new Window10();
-            //    blad.ShowDialog();
-            //}
+            Window7 check = new Window7(4, number);
+            check.Owner = this;
+            check.ShowDialog();
+          
         }
 
- 
+
 
         private void Grid_Loaded_1(object sender, RoutedEventArgs e)
         {
-            textx0.Content = halo.x[0].ToString();
-            textx1.Content = halo.x[1].ToString();
-            textx2.Content = halo.x[2].ToString();
-            textx3.Content = halo.x[3].ToString();
-            textf0.Content = halo.f[0].ToString();
-            textf1.Content = halo.f[1].ToString();
-            textf2.Content = halo.f[2].ToString();
-            textf3.Content = halo.f[3].ToString();
+            randomizeData();
+        }
+        private void randomizeData()
+        { 
+            textx0.Content = lagrange.x[0].ToString();
+            textx1.Content = lagrange.x[1].ToString();
+            textx2.Content = lagrange.x[2].ToString();
+            textx3.Content = lagrange.x[3].ToString();
+            textf0.Content = lagrange.f[0].ToString();
+            textf1.Content = lagrange.f[1].ToString();
+            textf2.Content = lagrange.f[2].ToString();
+            textf3.Content = lagrange.f[3].ToString();
+            k.Content = lagrange.k[0].ToString();
+            lagrange.ObliczL(4);
+            label1.Content = lagrange.z.ToString();
+
+            number.Numbers8[0] = textx0.Content.ToString();
+            number.Numbers8[1] = textx1.Content.ToString();
+            number.Numbers8[2] = textx2.Content.ToString();
+            number.Numbers8[3] = textx3.Content.ToString();
+            number.Numbers8[4] = textf0.Content.ToString();
+            number.Numbers8[5] = textf1.Content.ToString();
+            number.Numbers8[6] = textf2.Content.ToString();
+            number.Numbers8[7] = textf3.Content.ToString();
+            number.Numbers8[8] = label1.Content.ToString();
+
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)

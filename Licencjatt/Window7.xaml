@@ -10,7 +10,7 @@
     <Grid Loaded="Grid_Loaded_1">
         <TextBlock x:Name="textBlock" Margin="50,50,700,270" FontSize="26" TextWrapping="Wrap" Foreground="#FF2B7A06" Text="A tak wygląda poprawnie:"/>
         <TextBlock x:Name="textBlock1" Margin="50,150,700,270" FontSize="26" TextWrapping="Wrap" Foreground="#FF2B7A06" Text="Wynik:"/>
-        <Label x:Name="label1" Margin="50,200,850,200" Foreground="#FF2B7A06"/>
+        <Label x:Name="label80" Margin="50,200,850,200" Foreground="#FF2B7A06"/>
         <lvc:CartesianChart Margin="320,20,20,20" >
             <lvc:CartesianChart.Series>
                 <lvc:LineSeries StrokeThickness="10"

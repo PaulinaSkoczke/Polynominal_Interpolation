@@ -21,112 +21,131 @@ namespace Licencjatt
     /// </summary>
     public partial class Window7 : Window
     {
-        InterpolationL halo = new InterpolationL();
-        InterpolationN halo1 = new InterpolationN();
-
-        public Window7(int n)
+        Numbers _nn;
+        
+        public Window7(int n, Numbers nn)
         {
-            InitializeComponent();
-            int f1;
-            int f2;
-            int f3;
-            int f4;
-            int f5;
-            int x1;
-            int x2;
-            int x3;
-            int x4;
-            int x5;
 
+            _nn = nn;
+            InitializeComponent();
+          
 
             if (n == 2)
             {
+                
+                int f00;
+                int f01;
+                int x00;
+                int x01;
+             
+                f00 = int.Parse(nn.Numbers4[0]);
+                f01 = int.Parse(nn.Numbers4[1]);
+                x00 = int.Parse(nn.Numbers4[2]);
+                x01 = int.Parse(nn.Numbers4[3]);
+                
+                Values1 = new ChartValues<int> { f00, f01 };
 
-                f1 = halo.f[0];
-                f2 = halo.f[1];
-                x1 = halo.x[0];
-                x2 = halo.x[1];
-
-
-                Values1 = new ChartValues<int> { f1, f2 };
-
-                Values1 = new ChartValues<int> { x1, x2 };
+                Values1 = new ChartValues<int> { x00, x01 };
 
         
 
             }
             else if (n == 3)
             {
-                f1 = halo.f[0];
-                f2 = halo.f[1];
-                f3 = halo.f[2];
-                x1 = halo.x[0];
-                x2 = halo.x[1];
-                x3 = halo.x[2];
-
-                Values1 = new ChartValues<int> { f1, f2, f3 };
+                
+                int f00;
+                int f01;
+                int f02;
+                int x00;
+                int x01;
+                int x02;
                
-                    Values1 = new ChartValues<int> { x1, x2, x3 };
-              
+                x00 = int.Parse(nn.Numbers6[0]);
+                x01 = int.Parse(nn.Numbers6[1]);
+                x02 = int.Parse(nn.Numbers6[2]);
+                f00 = int.Parse(nn.Numbers6[3]);
+                f01 = int.Parse(nn.Numbers6[4]);
+                f02 = int.Parse(nn.Numbers6[5]);
+                
+                Values1 = new ChartValues<int> { f00, f01, f02 };
+
+                Values1 = new ChartValues<int> { x00, x01, x02 };
+
             }
             else if (n == 4)
             {
-                f1 = halo.f[0];
-                f2 = halo.f[1];
-                f3 = halo.f[2];
-                f4 = halo.f[3];
-                x1 = halo.x[0];
-                x2 = halo.x[1];
-                x3 = halo.x[2];
-                x4 = halo.x[3];
+                
+                int f00;
+                int f01;
+                int f02;
+                int f03;
+                int x00;
+                int x01;
+                int x02;
+                int x03;
+                x00 = int.Parse(nn.Numbers8[0]);
+                x01 = int.Parse(nn.Numbers8[1]);
+                x02 = int.Parse(nn.Numbers8[2]);
+                x03 = int.Parse(nn.Numbers8[3]);
+                f00 = int.Parse(nn.Numbers8[4]);
+                f01 = int.Parse(nn.Numbers8[5]);
+                f02 = int.Parse(nn.Numbers8[6]);
+                f03 = int.Parse(nn.Numbers8[7]);
+               
 
-                Values1 = new ChartValues<int> { f1, f2, f3, f4 };
+                Values1 = new ChartValues<int> { f00, f01, f02, f03 };
 
-                Values1 = new ChartValues<int> { x1, x2, x3, x4 };
+                Values1 = new ChartValues<int> { x00, x01, x02, x03 };
                
             }
 
             else if (n == 5)
             {
-                f1 = halo.f[0];
-                f2 = halo.f[1];
-                f3 = halo.f[2];
-                f4 = halo.f[3];
-                f5 = halo.f[4];
-                x1 = halo.x[0];
-                x2 = halo.x[1];
-                x3 = halo.x[2];
-                x4 = halo.x[3];
-                x5 = halo.x[4];
+                
 
-                Values1 = new ChartValues<int> { f1, f2, f3, f4, f5 };
-                //Values1 = new ChartValues<int> { x1, x2, x3, x4, x5 };
+                int f00;
+                int f01;
+                int f02;
+                int f03;
+                int f04;
+                int x00;
+                int x01;
+                int x02;
+                int x03;
+                int x04;
+
+                x00 = int.Parse(nn.Numbers10[0]);
+                x01 = int.Parse(nn.Numbers10[1]);
+                x02 = int.Parse(nn.Numbers10[2]);
+                x03 = int.Parse(nn.Numbers10[3]);
+                x04 = int.Parse(nn.Numbers10[4]);
+                f00 = int.Parse(nn.Numbers10[5]);
+                f01 = int.Parse(nn.Numbers10[6]);
+                f02 = int.Parse(nn.Numbers10[7]);
+                f03 = int.Parse(nn.Numbers10[8]);
+                f04 = int.Parse(nn.Numbers10[9]);
+
+                Values1 = new ChartValues<int> { f00, f01, f02, f03, f04 };
+                Values1 = new ChartValues<int> { x00, x01, x02, x03, x04 };
             }
 
             DataContext = this;    
         }
+
         private void Grid_Loaded_1(object sender, RoutedEventArgs e)
         {
-            
-            halo1.ObliczN(2);
-            halo1.ObliczN(3);
-            halo1.ObliczN(4);
-            halo1.ObliczN(5);
+            label80.Content = _nn.Numbers4[4];
+            label80.Content = _nn.Numbers6[6];
+            label80.Content = _nn.Numbers8[8];
+            label80.Content = _nn.Numbers10[10];
 
-            label1.Content = halo1.w.ToString();
 
         }
 
         public ChartValues<int> Values1 { get; set; }
-        //public ChartValues<int> Values3 { get; set; }
+       
 
-        //Values1 = new ChartValues<double> { };
-
-
-        //DataContext = this;
-
-
-        //public ChartValues<double> Values1 { get; set; }
+       
 
 
     }

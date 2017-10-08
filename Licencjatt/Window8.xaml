@@ -9,7 +9,7 @@
     <Grid Loaded="Grid_Loaded_1">
         <TextBlock x:Name="textBlock" Margin="100,50,600,350" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="ZADANIE 2" FontSize="36"/>
         <TextBlock x:Name="textBlock1" Margin="100,150,500,250" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="Wielomian interpolacyjny dla funkcji f zadny jest w sposób dyskretny:" FontSize="16" />
-        <TextBlock x:Name="textBlock5" Margin="100,330,500,70" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="Znajdź wartość wielomianu interpolacyjnego w punkcie x = 11" FontSize="16" />
+        <TextBlock x:Name="textBlock5" Margin="10,330,750,70" Foreground="#FF2B7A06" TextWrapping="Wrap" Text="Znajdź wartość wielomianu interpolacyjnego w punkcie x =" FontSize="16" />
         <RichTextBox x:Name="richTextBox" Margin="500,250,30,30" >
             <FlowDocument>
                 <Paragraph>
@@ -25,8 +25,9 @@
         <Label x:Name="textx1" Margin="190,230,760,210" Foreground="#FF2B7A06"/>
         <Label x:Name="textf0" Margin="130,270,820,170" Foreground="#FF2B7A06"/>
         <Label x:Name="textf1" Margin="190,270,760,170" Foreground="#FF2B7A06"/>
-        
-       
+        <Label x:Name="k" Margin="240,350,690,80" Foreground="#FF2B7A06"/>
+        <Label x:Name="label1" Margin="0,200,900,200" Foreground="Black"/>
+
         <TextBlock x:Name="textBlock11" Margin="700,30,20,400" Text="ZAPOMNIAŁEŚ?" FontSize="20" Foreground="#FF2B7A06" TextWrapping="Wrap" FontWeight="Bold"/>
         <Button x:Name="button" Content="Interpolacja Newtona" Background="#FF2B7A06" Margin="700,100,100,330" Click="button_Click"/>
         <Button x:Name="button1" Content="Interpolacja Lagrange'a" Background="#FF2B7A06" Margin="700,150,100,280" Click="button1_Click" />
