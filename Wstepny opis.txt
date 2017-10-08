@@ -1,0 +1,5 @@
+Nazwa: Aplikacja dydaktyczna – Interpolacja Wielomianowa
+Technologia: WPF
+Autor: Paulina Skoczke
+Opis:  Aplikacja dydaktyczna maj¹ca na celu u³atwienie nauki o interpolacji wielomianowe Lagrange’a i Newtona. 
+Zawieraæ bêdzie dok³adny opis (definicje, wzory) interpolacji i Lagrange’a i Newtona oraz grê pozwalaj¹c¹ lepiej przyswoiæ wiadomoœci. Gra bêdzie mia³a 4 poziomy, na ka¿dym z poziomie  liczba wêz³ów interpolacji bêdzie wzrastaæ.
